@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+    <link href="./assets/styles.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <title>Global Unicorn Tracker</title>
+    </head>
+    <body>
+        <fieldset>
+         <main>
+            <h1>Global Unicorn Tracker</h1>
+            <section>
+                <h2>All about this wonderous beast, and how to track one for yourself!</h2>
+                <!-- TODO: Add photo -->
+                <p>Click <a target="_blank" href="./images/unirun.gif">here</a> to see this mythical creature in action!</p>
+                <a href="./images/unirun.gif"> 
+                <img alt="A unicorn running" src="./images/uni.jpeg">
+                </a>
+            </section>
+            <section>
+                <h2>Unicorn Lists:</h2>
+                <h3>Things unicorns love:</h3>
+                    <ul>
+                        <li>Running majestically</li>
+                        <li>Deadpool</li>
+                        <li>Furry grass</li>
+                        <li>Cotton candy skies</li>
+                        <li>Willow wompers</li>
+                        <li>Frolicking with fairies</li>
+                        <li>Corn</li>
+                    </ul>
+                        <figure>
+                            <img alt="A stylized african unicorn" style="width: 300px" src="./images/africanuni.jpg">
+                            <figcaption><em>A beautifully stylized unicorn.</em></figcaption>
+                        </figure>
+                        <h3>Things unicorns dislike:</h3>
+                            <ol>
+                                <li>Greed</li>
+                                <li>Little green goblins</li>
+                                <li>Complainers</li>
+                                <li>Hotdogs</li>
+                                <li>Cavities</li>
+                            </ol>
+                        <figure>
+                            <img alt="A little green goblin" style="width: 300px" src="./images/goblin.jpg">
+                            <figcaption><em>Unicorns <strong>hate</strong> little green goblins!</em></figcaption>
+                        </figure>
+                
+                
+            </section>
+        </fieldset>
+          <section>
+            <h2>Unicorn Finder Form:</h2>
+            <form action="https://formspree.io/f/xpznvaak" method="POST">
+                <fieldset>
+                    <legend>Think you have found one? Please send in any information:</legend>
+
+                    <label> <input checked name="evidence-live photo-sketch" class="inline" value="evidence" id="evidence" type="radio"> Evidence</label>
+                    <label> <input name="evidence-live photo-sketch" class="inline" value="live photo" id="live photo" type="radio"> Live Photo</label>
+                    <label> <input name="evidence-live photo-sketch" class="inline" value="sketch" id="sketch" type="radio"> Sketch</label>
+
+                </fieldset>
+                <fieldset>
+
+                    <label>Upload Photo: <input type="file" name="upload"></label>
+
+                    <label>Include any information about your sighting: 
+                        <textarea placeholder="I was walking along the beach when I saw them..." cols="40" rows="4"></textarea>
+                    </label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Did you personally see this creature?</legend>
+
+                    <label for="yes" id="idk"> <input checked name="yes-no-i don't know what i saw" class="inline" type="checkbox" value="yes" id="dysi"> Yes</label>
+                    <label for="no" id="idk"> <input name="yes-no-i don't know what i saw" class="inline" type="checkbox" value="no" id="dysi"> No</label>
+                    <label for="i don't know what i saw" id="idk"> <input name="yes-no-i don't know what i saw" class="inline" type="checkbox" value="i don't know what i saw" id="dysi"> I don't know what I saw</label>
+                </fieldset>
+                <fieldset>
+                    <label>Enter Your Name: <input required name="name" type="textarea" id="name"></label>
+                    <label>How many unicorns were there? <input type="number" min="0" max="99"> </label>
+                    <label>How did you hear about us? 
+                        <select>
+                            <option name="">(Select one)</option>
+                            <option name="1">Google</option>
+                            <option name="2">A mysterious hooded man</option>
+                            <option name="3">An online article</option>
+                            <option name="4">The talking squirrels</option>
+                            <option name="5">Other</option>
+                        </select>
+                    </label>
+
+                    <input required type="text" name="email" placeholder="Email address">
+                </fieldset>
+                    <button type="submit" value="submit">Submit</button>
+            </form>
+          </section>
+        </main>
+        <footer>
+            <p style="font-family: 'Luminari';">
+                All rights not reserved by her Queenliness, Her Majesty Candy Raider
+            </p>
+        </footer>
+    </body>
+</html>
